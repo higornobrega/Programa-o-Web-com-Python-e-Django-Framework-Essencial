@@ -13,7 +13,7 @@ class ContatoFormTestCase(TestCase):
             'assunto': self.assunto,
             'mensagem': self.mensagem
         }
-        self.form = ContatoForm(data=self.dados)
+        self.form = ContatoForm(data=self.dados) #ContateForm(request.POST)
 
     def test_send_mail(self):
         form1 = ContatoForm(data=self.dados)
