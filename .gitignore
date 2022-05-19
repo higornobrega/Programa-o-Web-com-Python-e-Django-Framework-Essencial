@@ -7,3 +7,5 @@
 /fusion/fusion/__pycache__/urls.cpython-310.pyc
 /fusion/fusion/__pycache__/wsgi.cpython-310.pyc
 /djangoUM1/venv
+/djangoUM2/venv
+/djangoUM2/db.sqlite3
