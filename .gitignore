@@ -14,3 +14,8 @@
 /djangoUM2/djangoUM2/__pycache__
 /djangoUM1/djangoUM1/__pycache__
 /fusion/core/tests/__pycache__
+/djangoUM3/venv
+/djangoUM3/db.sqlite3
+/djangoUM3/djangoUM3/__pycache__
+/djangoUM3/usuarios/__pycache__
+/djangoUM3/usuarios/migrations/__pycache__
