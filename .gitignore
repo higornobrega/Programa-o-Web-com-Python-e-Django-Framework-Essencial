@@ -9,3 +9,8 @@
 /djangoUM1/venv
 /djangoUM2/venv
 /djangoUM2/db.sqlite3
+/djangoUM2/core/__pycache__
+/djangoUM2/core/migrations/__pycache__
+/djangoUM2/djangoUM2/__pycache__
+/djangoUM1/djangoUM1/__pycache__
+/fusion/core/tests/__pycache__
