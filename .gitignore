@@ -19,3 +19,8 @@
 /djangoUM3/djangoUM3/__pycache__
 /djangoUM3/usuarios/__pycache__
 /djangoUM3/usuarios/migrations/__pycache__
+/djangoORM/venv
+/djangoORM/core/__pycache__
+/djangoORM/core/migrations/__pycache__
+/djangoORM/db.sqlite3
+/djangoORM/djangoORM/__pycache__
