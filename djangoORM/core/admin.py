@@ -10,7 +10,10 @@ class MontadoraAdmin(admin.ModelAdmin):
 
 @admin.register(Carro)
 class CarroAdmin(admin.ModelAdmin):
-    list_display = ('chassi', 'modelo', 'preco', )
+    list_display = ('chassi', 'modelo', 'preco', 'get_motoristas', )
+    # Junta todos os motoristas com Python e retorna
+    def get_motoristas(self, obj):
+        return ', '.join([m.username for m in obj.motoristas.all()])
 
-
-# Register your models here.
+    # Muda o nome que vai ser mostrado no admin do Django
+    get_motoristas.short_description = 'Motoristas' 

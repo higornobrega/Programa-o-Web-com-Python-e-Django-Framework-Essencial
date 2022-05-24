@@ -20,7 +20,9 @@ class Montadora(models.Model):
     def __str__(self):
         return str(self.nome)
 
-
+#Tentar pegar uma Montadora com nome Padrão, caso não exista, crie
+def set_default_montadora():
+    return Montadora.objects.get_or_create(nome='Padrão')[0] # Retorna 2 parâmetros object ([0]) e boolean ([1]) 
 
 
 class Carro(models.Model):
@@ -42,7 +44,7 @@ class Carro(models.Model):
     modelo = models.CharField('Modelo', max_length=30)
     motoristas = models.ManyToManyField(get_user_model())
     preco = models.DecimalField('Preço', max_digits=8, decimal_places=2)
-    montadora = models.ForeignKey(Montadora, on_delete=models.CASCADE)
+    montadora = models.ForeignKey(Montadora, on_delete=models.SET(set_default_montadora))
     class Meta:
         verbose_name = 'Carro'
         verbose_name_plural = 'Carros'
