@@ -24,3 +24,8 @@
 /djangoORM/core/migrations/__pycache__
 /djangoORM/db.sqlite3
 /djangoORM/djangoORM/__pycache__
+realtime/venv
+venv/lib64
+venv/pyvenv.cfg
+venv/bin/python
+venv/bin/python3
