@@ -11,7 +11,7 @@
 <body>
     <div class="containner">
         <textarea id="sala" cols="70" rows="15"></textarea>
-        <input type="text" id="nome_sala" size="100"><br/>
+        <input type="text" id="texto" size="100"><br/>
 
         {% buttons %}
             <input type="button" value="Entrar" id="botao">
@@ -21,7 +21,7 @@
 
     <script>
 
-        var nome_sala = {{nome_sala_json}}
+        var nome_sala = {{ nome_sala_json }}
 
         var chatSocket = new WebSocket(
             'ws://'+ window.location.host +
